@@ -10,20 +10,23 @@ header {background-color: black;
   font-size: medium;
   }
 
-h1 {color: rgb(252, 250, 250) !important;
-font-size: 50px;
-font-family: 'Playfair Display', serif;
-text-shadow: sandybrown;
-letter-spacing: 2px;}
+.div-logo-titulo {
+  justify-content:center;
+  display:flex;
+  align-items:first baseline;
+}
 
-.pcolor {color: blue;}
+.div-logo-titulo h1 {
+  font-family: "UnifrakturCook", cursive;
+  color: white;
+  font-size: 60px;
 
 
-
+}
 
 .listcolor{list-style: none;
 display: flex;
-gap: 30px;
+gap: 50px;
 padding: 0;
 margin: 0;
 justify-content: center;}
@@ -31,16 +34,10 @@ justify-content: center;}
 .listcolor li a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-family: "UnifrakturCook", cursive;
+    font-size: 25px;
   }
 
-
-.logo-titulocolor {
-    justify-content:center;
-    display:inline-flex;
-    align-items: center;
-  }
 
 .logo-marca{
     font-family: "Tagesschrift", system-ui;
@@ -74,6 +71,8 @@ justify-content: center;}
     object-fit:fill;    /* Recorta para que se vean todas parejas */
     border-radius: 50px;         /* Estética opcional */
   }
+
+.pcolor {color: blue;}
 
 footer{
   width: 100%;;
