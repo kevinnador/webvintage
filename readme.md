@@ -1,3 +1,3 @@
-apredemos con html, css.
+aprendemos con html, css.
 pagina web 
 sin fines comerciales.
