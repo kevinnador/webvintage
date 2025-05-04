@@ -10,18 +10,21 @@ header {background-color: black;
   font-size: medium;
   }
 
-.div-logo-titulo {
-  justify-content:center;
-  display:flex;
-  align-items:first baseline;
+.encabezado {
+  text-align: center;
+  padding: 20px;
 }
 
-.div-logo-titulo h1 {
-  font-family: "UnifrakturCook", cursive;
+.logo {  
+  max-width: 150px;
+  height: auto;
+}
+
+.titulo {
   color: white;
-  font-size: 60px;
-
-
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 .listcolor{list-style: none;
@@ -34,7 +37,7 @@ justify-content: center;}
 .listcolor li a {
     text-decoration: none;
     color: #fff;
-    font-family: "UnifrakturCook", cursive;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 25px;
   }
 
