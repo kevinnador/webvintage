@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Formulario de contactos- old soul</title>
+    <!-- este link nos conecta con el css que cremamos como style.css -->
+    <title>old soul</title>
 </head>
 <body>
-    <header class="headercolor">
-        <div class="logo-titulocolor">
-            <img src="./img/logo.png" alt="logo" width="15%">
-            <h1>old soul</h1>
+    <header>
+        <div class="encabezado">
+            <img src="./img/logo.png" alt="logo" width="15%" class="logo">
+            <h1 class="titulo">old soul</h1>
         </div>
         <hr style="border: 2px solid #0e0b0b;">
         <nav>
@@ -21,7 +25,26 @@
             </ul>
         </nav>
     </header>
-    
+    <hr>
+    <main>
+        <form action="https://formspree.io/f/xwpoboyb" method="post">
+            <input type="texto" name="nombre" id="nombre" placeholder="ingrese su nombre">
+            <br>
+            <input type="email" name="email" id="email" placeholder="ingrese su email">
+            <br>
+            <textarea name="consulta" id="consulta" cols="30" rows="10" aria-placeholder="Escriba su consulta"></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit" placeholder="Enviar">
+            <input type="reset" name="reset" id="reset" placeholder="Restablecer">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <hr style="border: 2px solid #0e0b0b;">
+        <p>Kevin Nador ☺- Desarrollador Front-end. <br>Mi sitio web. Todos los derechos reservados</a>
+        <br>
+        <hr>
+    </footer>
 </body>
-</html>
+</html> 
 
