@@ -8,17 +8,19 @@ header {background-color: black;
   width:max-content 100%;
   height: max-content 100%;
   font-size: medium;
+  position: sticky;
+  top: 0%;
   }
 
 .encabezado {
   text-align: center;
   padding: 20px;
 }
-
+/* utilizacion de margin, padding y border 7/5 */
 .logo {  
   max-width: 150px;
   height: auto;
-}
+} 
 
 .titulo {
   color: white;
@@ -45,7 +47,7 @@ justify-content: center;}
 .logo-marca{
     font-family: "Tagesschrift", system-ui;
     display: flex;
-    justify-content: space-around; /* o space-between / center */
+    justify-content: space-around; /* o  space-between / center */
     align-items: center;
     flex-wrap: wrap; /* Esto evita el desborde en pantallas chicas */
     gap: 0%; /* espacio entre logos */
