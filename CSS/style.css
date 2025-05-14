@@ -6,7 +6,7 @@ body{background-color: white;}
 
 header {background-color: black;
   font-size:medium;
-  position: sticky;
+  position:unset;
   top: 0%;
   }
 
@@ -46,20 +46,19 @@ header {background-color: black;
 }
 
 
-.logo-marca{
-    font-family: "Tagesschrift", system-ui;
-    display: flex;
-    justify-content: space-around; /* o  space-between / center */
-    align-items: center;
-    flex-wrap: wrap; /* Esto evita el desborde en pantallas chicas */
-    gap: 0%; /* espacio entre logos */
-    padding: 20px;
-    max-width: 100%; /* nunca se sale del ancho de la página */
+.logo-marca {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 30px;
+  margin: 0%;
+  padding: 0%;
   }
 
-.logo-marca img {
-    width: 10%;
-    height: auto;
+
+.logo-marca a img {
+    width: 100px;
+    height: 150px;
     object-fit: contain;
 }
 
@@ -94,6 +93,10 @@ footer{
 /*        ADIDAS         */
 /* ----------------------*/
 
+#adidas {
+  margin : 100px;
+  padding: 50px;}
+
 .encabezado-adidas {
   text-align: center;
   padding: 0%;
@@ -122,9 +125,10 @@ footer{
   }
 
 .img-adidas img {
-  width: 200px;             
-  height: 200px;
-  object-fit:fill;    
+  width: 100%;             
+  max-width: 200px;
+  height: auto;
+  object-fit:cover;    
   border-radius: 50px;
 }
 
@@ -132,6 +136,11 @@ footer{
 /* ----------------------*/
 /*        NIKE           */
 /* ----------------------*/
+
+#nike {
+  margin : 100px;
+  padding: 50px;}
+
 
 .encabezado-nike {
   text-align: center;
@@ -161,9 +170,10 @@ footer{
 }
 
 .img-nike img {
-  width: 200px;             
-  height: 200px;
-  object-fit: fill;    
+  width: 100%;             
+  max-width: 200px;
+  height: auto;
+  object-fit:cover;    
   border-radius: 50px;
 }
 
@@ -171,6 +181,10 @@ footer{
 /* ----------------------*/
 /*        PUMA           */
 /* ----------------------*/
+
+#puma {
+  margin : 100px;
+  padding: 50px;}
 
 .encabezado-puma {
   text-align: center;
@@ -200,9 +214,10 @@ footer{
 }
 
 .img-puma img {
-  width: 200px;             
-  height: 200px;
-  object-fit: fill;    
+  width: 100%;             
+  max-width: 200px;
+  height: auto;
+  object-fit:cover;    
   border-radius: 50px;
 }
 
@@ -210,6 +225,12 @@ footer{
 /* ----------------------*/
 /*        REEBOK         */
 /* ----------------------*/
+
+#reebok {
+  margin : 100px;
+  padding: 50px;}
+
+
 
 .encabezado-reebok {
   text-align: center;
@@ -239,8 +260,9 @@ footer{
 }
 
 .img-reebok img {
-  width: 200px;             
-  height: 200px;
-  object-fit: fill;    
+  width: 100%;             
+  max-width: 200px;
+  height: auto;
+  object-fit:cover;    
   border-radius: 50px;
 }
