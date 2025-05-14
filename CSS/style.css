@@ -94,21 +94,153 @@ footer{
 /*        ADIDAS         */
 /* ----------------------*/
 
+.encabezado-adidas {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;  
+}
+
+.logo-adidas{
+  max-width: 150px;
+  height: auto;
+}
+
+.titulo-adidas {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-adidas {
+  display: flex;
+  flex-wrap: wrap;            
+  gap: 80px;
+  justify-content: center;    
+  padding: 20px;
+  }
+
+.img-adidas img {
+  width: 200px;             
+  height: 200px;
+  object-fit:fill;    
+  border-radius: 50px;
+}
 
 
 /* ----------------------*/
 /*        NIKE           */
 /* ----------------------*/
 
+.encabezado-nike {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;  
+}
+
+.logo-nike {
+  max-width: 150px;
+  height: auto;   
+}
+
+.titulo-nike {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-nike {
+  display: flex;
+  flex-wrap: wrap;            
+  gap: 80px;
+  justify-content: center;    
+  padding: 20px;
+}
+
+.img-nike img {
+  width: 200px;             
+  height: 200px;
+  object-fit: fill;    
+  border-radius: 50px;
+}
 
 
 /* ----------------------*/
 /*        PUMA           */
 /* ----------------------*/
 
+.encabezado-puma {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;  
+}
+
+.logo-puma {
+  max-width: 150px;
+  height: auto;   
+}
+
+.titulo-puma {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-puma {
+  display: flex;
+  flex-wrap: wrap;            
+  gap: 80px;
+  justify-content: center;    
+  padding: 20px;
+}
+
+.img-puma img {
+  width: 200px;             
+  height: 200px;
+  object-fit: fill;    
+  border-radius: 50px;
+}
 
 
 /* ----------------------*/
 /*        REEBOK         */
 /* ----------------------*/
 
+.encabezado-reebok {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;  
+}
+
+.logo-reebok {
+  max-width: 150px;
+  height: auto;   
+}
+
+.titulo-reebok {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-reebok {
+  display: flex;
+  flex-wrap: wrap;            
+  gap: 80px;
+  justify-content: center;    
+  padding: 20px;
+}
+
+.img-reebok img {
+  width: 200px;             
+  height: 200px;
+  object-fit: fill;    
+  border-radius: 50px;
+}
