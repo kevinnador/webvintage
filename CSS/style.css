@@ -10,6 +10,7 @@ main{
 }
 
 header {
+  max-height: 100%;
   background-color: black;
   font-size:medium;
   position:sticky;
