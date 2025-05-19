@@ -4,10 +4,18 @@ html {
 
 body{background-color: white;}
 
-header {background-color: black;
+main{
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  background-color: black;
   font-size:medium;
-  position:unset;
+  position:sticky;
   top: 0%;
+  z-index: 9999;
+  box-shadow: 0px 0px 10px black;
   }
 
 .encabezado {
@@ -81,12 +89,89 @@ header {background-color: black;
   color: blue;}
 
 footer{
-  
-  text-align: center;
-  width: 100%;;
-  height: 100%;
-  font-size: medium; color: #fbfafa;
+  color: #fbfafa;
   background-color: black;
+  text-align: center;
+  position: static;
+  top: 0%;
+}
+.encabezado-footer {
+  text-align:center;
+  padding: 0%;
+  margin: 0%;
+}
+.titulo-derechos {
+  font-family:"Bebas Neue", sans-serif;
+}
+
+.redes {
+  padding: 20px;
+
+}
+.titulo-redes {
+  font-family:"Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav-redes {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+ 
+
+}
+.nav-redes li i {
+  gap: 20px;
+  height: 20px;
+  width: 20px;
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+ 
+
+.grilla {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+/* --------------------------------------------------------------------- */
+                            /* HTML PRODUCTOS  */
+/* --------------------------------------------------------------------- */
+
+.parrafo-producto {
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+  height: 20px;
+}
+
+.campera{
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+.campera img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
+}
+.campera .dorso {
+  opacity: 0;
+}
+.campera:hover .dorso{
+  opacity: 1;
+}
+.campera:hover .frente{
+  opacity: 0;
 }
 
 /* ----------------------*/
@@ -94,13 +179,16 @@ footer{
 /* ----------------------*/
 
 #adidas {
-  margin : 100px;
-  padding: 50px;}
+  padding: 100px;
+  margin: 50px;
+  scroll-margin-top: 250px;
+  /* Ajustá según el alto de tu header */
+}
 
 .encabezado-adidas {
   text-align: center;
   padding: 0%;
-  margin: 0%;  
+  margin: 0%;
 }
 
 .logo-adidas{
@@ -122,25 +210,26 @@ footer{
   gap: 80px;
   justify-content: center;    
   padding: 20px;
+  margin: 50px;
   }
 
 .img-adidas img {
-  width: 100%;             
+  width: 200px;        
   max-width: 200px;
   height: auto;
-  object-fit:cover;    
+  object-fit:cover;
   border-radius: 50px;
 }
-
 
 /* ----------------------*/
 /*        NIKE           */
 /* ----------------------*/
 
 #nike {
-  margin : 100px;
-  padding: 50px;}
-
+  padding: 100px;
+  margin: 50px;
+  scroll-margin-top: 250px;
+}
 
 .encabezado-nike {
   text-align: center;
@@ -167,6 +256,7 @@ footer{
   gap: 80px;
   justify-content: center;    
   padding: 20px;
+  margin: 50px;
 }
 
 .img-nike img {
@@ -183,8 +273,10 @@ footer{
 /* ----------------------*/
 
 #puma {
-  margin : 100px;
-  padding: 50px;}
+  padding: 100px;
+  margin: 50px; 
+  scroll-margin-top: 250px;
+}
 
 .encabezado-puma {
   text-align: center;
@@ -211,6 +303,7 @@ footer{
   gap: 80px;
   justify-content: center;    
   padding: 20px;
+  margin: 50px;
 }
 
 .img-puma img {
@@ -227,10 +320,11 @@ footer{
 /* ----------------------*/
 
 #reebok {
-  margin : 100px;
-  padding: 50px;}
-
-
+  padding: 100px;
+  margin: 50px;
+  scroll-margin-top: 250px;
+  /* Ajustá según el alto de tu header */
+}
 
 .encabezado-reebok {
   text-align: center;
@@ -257,6 +351,7 @@ footer{
   gap: 80px;
   justify-content: center;    
   padding: 20px;
+  margin: 50px;
 }
 
 .img-reebok img {
