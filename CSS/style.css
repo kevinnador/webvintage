@@ -1,6 +1,9 @@
 html {
   font-size: 1rem;
 }
+/* --------------------------------------------------------------------- */
+                            /* HTML INDEX  */
+/* --------------------------------------------------------------------- */
 
 body{background-color: white;}
 
@@ -8,10 +11,10 @@ main{
   padding: 0%;
   margin: 0%;
 }
-
+/* ----------------------*/
+/*        HEADER         */
+/* ----------------------*/
 header {
-  max-width: 100%;
-  max-height: 100%;
   background-color: black;
   font-size:medium;
   position:sticky;
@@ -54,7 +57,9 @@ header {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
 }
-
+/* ----------------------*/
+/*        MAIN         */
+/* ----------------------*/
 
 .logo-marca {
   display: flex;
@@ -89,7 +94,9 @@ header {
 
 .pcolor {
   color: blue;}
-
+/* ----------------------*/
+/*        FOOTER         */
+/* ----------------------*/
 footer{
   color: #fbfafa;
   background-color: black;
@@ -129,14 +136,16 @@ footer{
 }
 .nav-redes li i {
   gap: 20px;
-  height: 20px;
-  width: 20px;
-  margin: 0%;
-  padding: 0%;
+  height: 30px;
+  width: 30px;
+  margin: 10%;
+  padding: 10%;
 }
 
 
-
+/* ----------------------*/
+/*        GRIDD         */
+/* ----------------------*/
  
 
 .grilla {
@@ -219,7 +228,7 @@ footer{
   width: 200px;        
   max-width: 200px;
   height: auto;
-  object-fit:cover;
+  object-fit: cover;
   border-radius: 50px;
 }
 
