@@ -49,7 +49,7 @@ header {
 
 .nav-lista{
   
-  height: 30px;
+  flex-wrap: wrap;
   list-style:none;
   display: flex;
   gap: 50px;
@@ -529,19 +529,19 @@ footer{
     font-size: 1rem;
   }
   .nav-lista a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .logo-marca a img {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
   .campera-inicio img {
-    width: 6rem;   
-    max-width: 6rem;
-    height: 6rem;    
+    width: 7rem;   
+    max-width: 7rem;
+    height: 7rem;    
   }
 }
 
