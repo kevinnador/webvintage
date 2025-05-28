@@ -76,6 +76,8 @@ header {
 /* ----------------------*/
 
 .logo-marca {
+  height: 10rem;
+  border: 3px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
@@ -534,6 +536,9 @@ footer{
 }
 
 @media (max-width: 768px) {
+  .logo-marca {
+    height: 5rem;
+  }
   .logo-marca a img {
     width: 3rem;
     height: 3rem;
