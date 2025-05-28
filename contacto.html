@@ -31,16 +31,21 @@
     </header>
     <hr>
     <main>
-        <form action="https://formspree.io/f/xwpoboyb" method="post">
-            <input type="texto" name="nombre" id="nombre" placeholder="ingrese su nombre">
-            <br>
-            <input type="email" name="email" id="email" placeholder="ingrese su email">
-            <br>
-            <textarea name="consulta" id="consulta" cols="30" rows="10" aria-placeholder="Escriba su consulta"></textarea>
-            <br>
-            <input type="submit" name="submit" id="submit" placeholder="Enviar">
-            <input type="reset" name="reset" id="reset" placeholder="Restablecer">
-        </form>
+        <div class="formulario-contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xwpoboyb" method="post">
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+
+                <textarea name="consulta" id="consulta" cols="30" rows="6" placeholder="Escriba su consulta" required></textarea>
+
+                <div class="btn-group">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restablecer">
+                </div>
+            </form>
+        </div>
     </main>
     <hr>
     <footer>

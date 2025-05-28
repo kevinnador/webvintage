@@ -27,12 +27,14 @@ header {
   }
 
 .encabezado {
+  
   text-align: center;
   padding: 0%;
   margin: 0%;
 }
 
 .logo {  
+  border: 3px solid white;
   max-width: 150px;
   height: auto;
 } 
@@ -517,8 +519,120 @@ footer{
                             /* MEDIA QUERIES  */
 /* --------------------------------------------------------------------- */
   
-@media (max-weidht: 800px){
-  .img-adidas{
-    padding: 0 10px;
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 75px;
   }
+  .titulo {
+    font-size: 1rem;
+  }
+  .nav-lista a {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-marca a img {
+    width: 75px;
+    height: 75px;
+  }
+  .campera-inicio img {
+    width: 100px;   
+    max-width: 100px;
+    height: 100px;    
+  }
+}
+
+/* --------------------------------------------------------------------- */
+                            /* UBICACION  */
+/* --------------------------------------------------------------------- */
+
+.titulo-ubicacion { 
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+  font-family: ARIAL, sans-serif;
+
+}
+.map-container{
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.iframe-ubi {
+  
+  width: 100%;
+  height: 500px;
+  border: none;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 50px;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* --------------------------------------------------------------------- */
+                            /* CONTACTO  */
+/* --------------------------------------------------------------------- */
+
+.formulario-contacto {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-contacto h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formulario-contacto form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.formulario-contacto input[type="submit"],
+.formulario-contacto input[type="reset"] {
+  width: 48%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto input[type="reset"] {
+  background-color: #f44336;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.formulario-contacto input[type="reset"]:hover {
+  background-color: #d32f2f;
+}
+
+.formulario-contacto .btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
 }
