@@ -7,20 +7,23 @@ html {
 
 body{background-color: white;}
 
-main{
-  padding: 0%;
-  margin: 0%;
-}
+/* CSS HEX */
+
+/* --persian-red: #C54434ff;
+--teal: #267F7Eff;
+--jasmine: #EAC46Fff;
+--bronze: #D88636ff;
+--bistre: #472B1Fff; */
 /* ----------------------*/
 /*        HEADER         */
 /* ----------------------*/
 header {
   background-color: black;
-  font-size:medium;
   position:sticky;
   top: 0%;
   z-index: 9999;
   box-shadow: 0px 0px 10px black;
+  border-radius: 30px;
   }
 
 .encabezado {
@@ -43,6 +46,7 @@ header {
 }
 
 .nav-lista{
+  height: 30px;
   list-style:none;
   display: flex;
   gap: 50px;
@@ -51,12 +55,20 @@ header {
   justify-content: center;
 }
 
-.nav-lista li a {
+.nav-lista a {
   text-decoration: none;
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
+  transition: all 0.5s ease;
 }
+.nav-lista a:hover {
+  font-size: 1.7rem;
+  transform: scale(1.2);
+}
+
+
+
 /* ----------------------*/
 /*        MAIN         */
 /* ----------------------*/
@@ -68,41 +80,79 @@ header {
   gap: 30px;
   margin: 0%;
   padding: 0%;
-  }
+  box-shadow: 0px 0px 10px black;
+  border-radius: 50px;
+}
 
 
 .logo-marca a img {
     width: 100px;
     height: 150px;
     object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.logo-marca img:hover {
+  transform: scale(1.1);
 }
 
 .img-inicio {
-    display: flex;
-    flex-wrap: wrap;            /* Para que bajen si no entran */
-    gap: 80px;
-    justify-content: center;    /* Centra el contenido */
-    padding: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:50px;
+  padding: 20px;
+  margin: 50px;
+}
+.campera-inicio {
+  border-radius: 50px;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0px 0px 10px black;
+}
+.campera-inicio img {
+  padding: 0%;
+  margin: 0%;
+  width: 200px;   
+  max-width: 200px;
+  height: 200px;
+  border-top: 5px;
+  border-top: 5px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  /* top y left ajustan el alto y la izquierda de la imagen, y translate lo empujamos hacia el centro*/
+  transition: opacity 0.5s ease, transform 1.0s ease;
+}
+.campera-inicio:hover {
+  transform: translateY(-10px);
+}
 
-.img-inicio img {
-    width: 200px;               /* Tamaño fijo o usá % para responsive */
-    height: 200px;
-    object-fit:fill;    /* Recorta para que se vean todas parejas */
-    border-radius: 50px;         /* Estética opcional */
-  }
+.campera-inicio .dorso {
+  opacity: 0;
+}
+.campera-inicio:hover .dorso {
+  opacity: 1;
+}
+.campera-inicio:hover .frente {
+  opacity: 0;
+}
 
-.pcolor {
-  color: blue;}
+
 /* ----------------------*/
 /*        FOOTER         */
 /* ----------------------*/
 footer{
-  color: #fbfafa;
+  
   background-color: black;
   text-align: center;
   position: static;
   top: 0%;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 30px;
 }
 .encabezado-footer {
   text-align:center;
@@ -110,6 +160,7 @@ footer{
   margin: 0%;
 }
 .titulo-derechos {
+  color: #fbfafa;
   font-family:"Bebas Neue", sans-serif;
 }
 
@@ -118,6 +169,7 @@ footer{
 
 }
 .titulo-redes {
+  color: #fbfafa;
   font-family:"Bebas Neue", sans-serif;
   font-size: 1.5rem;
   margin: 0%;
@@ -125,6 +177,7 @@ footer{
 }
 
 .nav-redes {
+  color: #EAC46Fff;
   list-style: none;
   display: flex;
   gap: 20px;
@@ -150,7 +203,78 @@ footer{
 
 .grilla {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  border: 1px solid black;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 30px;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+
+.item {
+  display: flex;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  background-color: aqua;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+/* ----------------------*/
+/*        RESEÑAS         */
+/* ----------------------*/
+
+.reseñas {
+  padding: 40px 20px;
+  background-color: black;
+  text-align: center;
+  border-radius: 50px;
+  margin: 30px;
+  box-shadow:  0px 0px 10px black;
+}
+
+.reseñas h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.grid-reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reseña {
+  background: white;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reseña:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.comentario {
+  font-family: "Courgette", cursive;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.autor {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #666;
 }
 
 /* --------------------------------------------------------------------- */
@@ -165,15 +289,22 @@ footer{
 }
 
 .campera{
+ 
+  border-radius: 50px;
   position: relative;
-  width: 200px;
-  height: auto;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0px 0px 10px black;
 }
 .campera img {
   position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.5s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.campera:hover {
+  transform: translateY(-10px);
 }
 .campera .dorso {
   opacity: 0;
@@ -190,19 +321,22 @@ footer{
 /* ----------------------*/
 
 #adidas {
-  padding: 100px;
+  padding: 50px;
   margin: 50px;
   scroll-margin-top: 250px;
   /* Ajustá según el alto de tu header */
 }
 
 .encabezado-adidas {
-  text-align: center;
+
+  display: grid;
+  justify-items: center;
   padding: 0%;
   margin: 0%;
 }
 
 .logo-adidas{
+
   max-width: 150px;
   height: auto;
 }
@@ -216,16 +350,19 @@ footer{
 }
 
 .img-adidas {
+ 
   display: flex;
-  flex-wrap: wrap;            
-  gap: 80px;
-  justify-content: center;    
+  flex-wrap: wrap;     
+  justify-content:center;       
+  gap: 50px;
+  justify-items: center;    
   padding: 20px;
   margin: 50px;
   }
 
 .img-adidas img {
-  width: 200px;        
+
+  width: 100%;   
   max-width: 200px;
   height: auto;
   object-fit: cover;
@@ -237,7 +374,7 @@ footer{
 /* ----------------------*/
 
 #nike {
-  padding: 100px;
+  padding: 50px;
   margin: 50px;
   scroll-margin-top: 250px;
 }
@@ -263,9 +400,10 @@ footer{
 
 .img-nike {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;            
-  gap: 80px;
-  justify-content: center;    
+  gap: 50px;
+  justify-items: center;    
   padding: 20px;
   margin: 50px;
 }
@@ -284,7 +422,7 @@ footer{
 /* ----------------------*/
 
 #puma {
-  padding: 100px;
+  padding: 50px;  
   margin: 50px; 
   scroll-margin-top: 250px;
 }
@@ -310,9 +448,10 @@ footer{
 
 .img-puma {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;            
-  gap: 80px;
-  justify-content: center;    
+  gap: 50px;
+  justify-items: center;    
   padding: 20px;
   margin: 50px;
 }
@@ -331,7 +470,7 @@ footer{
 /* ----------------------*/
 
 #reebok {
-  padding: 100px;
+  padding: 50px;
   margin: 50px;
   scroll-margin-top: 250px;
   /* Ajustá según el alto de tu header */
@@ -358,9 +497,10 @@ footer{
 
 .img-reebok {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;            
-  gap: 80px;
-  justify-content: center;    
+  gap: 50px;
+  justify-items: center;    
   padding: 20px;
   margin: 50px;
 }
@@ -371,4 +511,14 @@ footer{
   height: auto;
   object-fit:cover;    
   border-radius: 50px;
+}
+
+/* --------------------------------------------------------------------- */
+                            /* MEDIA QUERIES  */
+/* --------------------------------------------------------------------- */
+  
+@media (max-weidht: 800px){
+  .img-adidas{
+    padding: 0 10px;
+  }
 }
