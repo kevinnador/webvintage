@@ -535,8 +535,8 @@ footer{
 
 @media (max-width: 768px) {
   .logo-marca a img {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
   .campera-inicio img {
     width: 7rem;   
