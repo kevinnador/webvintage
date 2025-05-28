@@ -83,7 +83,7 @@ header {
   justify-content:space-around;
   align-items: center;
   gap: 30px;
-  margin: 0%;
+  margin: 1.5rem;
   padding: 0%;
   box-shadow: 0px 0px 10px black;
   border-radius: 50px;
@@ -538,6 +538,7 @@ footer{
 @media (max-width: 768px) {
   .logo-marca {
     height: 5rem;
+    margin:1.5rem
   }
   .logo-marca a img {
     width: 3rem;
