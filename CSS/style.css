@@ -522,7 +522,7 @@ footer{
 
 @media (max-width: 768px) {
   .logo {
-    max-width: 75px;
+    max-width: 5rem;
   }
   .titulo {
     font-size: 1rem;
@@ -534,13 +534,13 @@ footer{
 
 @media (max-width: 768px) {
   .logo-marca a img {
-    width: 75px;
-    height: 75px;
+    width: 4rem;
+    height: 4rem;
   }
   .campera-inicio img {
-    width: 100px;   
-    max-width: 100px;
-    height: 100px;    
+    width: 6rem;   
+    max-width: 6rem;
+    height: 6rem;    
   }
 }
 
