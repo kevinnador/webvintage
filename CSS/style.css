@@ -7,13 +7,6 @@ html {
 
 body{background-color: white;}
 
-/* CSS HEX */
-
-/* --persian-red: #C54434ff;
---teal: #267F7Eff;
---jasmine: #EAC46Fff;
---bronze: #D88636ff;
---bistre: #472B1Fff; */
 /* ----------------------*/
 /*        HEADER         */
 /* ----------------------*/
@@ -27,7 +20,6 @@ header {
   }
 
 .encabezado {
-  
   text-align: center;
   padding: 0%;
   margin: 0%;
@@ -47,7 +39,7 @@ header {
 }
 
 .nav-lista{
-  
+  height: 2rem;
   flex-wrap: wrap;
   list-style:none;
   display: flex;
@@ -65,7 +57,7 @@ header {
   transition: all 0.5s ease;
 }
 .nav-lista a:hover {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   transform: scale(1.2);
 }
 
@@ -98,7 +90,7 @@ header {
 }
 
 .logo-marca img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .img-inicio {
@@ -157,7 +149,7 @@ footer{
   position: static;
   top: 0%;
   box-shadow: 0px 0px 10px black;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 .encabezado-footer {
   text-align:center;
@@ -533,9 +525,6 @@ footer{
   .nav-lista a {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 768px) {
   .logo-marca {
     height: 4.5rem;
     width: 90%;
@@ -545,7 +534,25 @@ footer{
     width: 2.5rem;
     height: 2.5rem;
   }
-   
+
+  .formulario-contacto h2 {
+  margin-bottom: 0.7rem;
+  }
+  .formulario-contacto form {
+  
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 250px;
+  width: 45%;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    width: 90%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    font-size: 0.5rem;
+    }
 }
 
 /* --------------------------------------------------------------------- */
@@ -571,7 +578,7 @@ footer{
   height: 500px;
   border: none;
   box-shadow: 0px 0px 10px black;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 0%;
   margin: 0%;
 }
@@ -583,10 +590,11 @@ footer{
 .formulario-contacto {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  padding: 40px 0;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .formulario-contacto h2 {
