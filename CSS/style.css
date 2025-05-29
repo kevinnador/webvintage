@@ -115,8 +115,6 @@ header {
   width: 200px;   
   max-width: 200px;
   height: 200px;
-  border-top: 5px;
-  border-top: 5px;
   position: absolute;
   top: 50%;
   left:50%;
@@ -294,6 +292,9 @@ footer{
   box-shadow: 0px 0px 10px black;
 }
 .campera img {
+  width: 200px;   
+  max-width: 200px;
+  height: 200px;  
   position: absolute;
   top: 50%;
   left: 50%;
