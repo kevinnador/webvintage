@@ -1,0 +1,943 @@
+html {
+  font-size: 1rem;
+}
+/* --------------------------------------------------------------------- */
+                            /* HTML INDEX  */
+/* --------------------------------------------------------------------- */
+
+body{background-color: white;}
+
+/* ----------------------*/
+/*        HEADER         */
+/* ----------------------*/
+header {
+  background-color: black;
+  position:sticky;
+  top: 0%;
+  z-index: 9999;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px black;
+  }
+
+.encabezado {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.logo {  
+  max-width: 150px;
+  height: auto;
+} 
+
+.titulo {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav-lista{
+  height: 2rem;
+  flex-wrap: wrap;
+  list-style:none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-lista a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+.nav-lista a:hover {
+  font-size: 1.8rem;
+  transform: scale(1.2);
+}
+
+
+
+/* ----------------------*/
+/*        MAIN         */
+/* ----------------------*/
+
+.logo-marca {
+  height: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  gap: 30px;
+  margin: 1.5rem;
+  padding: 0%;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 50px;
+}
+
+
+.logo-marca a img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.logo-marca img:hover {
+  transform: scale(1.5);
+}
+
+.img-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:50px;
+  padding: 20px;
+  margin: 50px;
+}
+.campera-inicio {
+  
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 10px black;
+}
+.campera-inicio img {
+  background-color: #e4e1e1;
+  border-radius: 15px;
+  padding-top: 25%;
+  padding-left: 16%;
+  padding-right: 16%;
+  margin: 0%;
+  width: 200px;   
+  max-width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 35%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  /* top y left ajustan el alto y la izquierda de la imagen, y translate lo empujamos hacia el centro*/
+  transition: opacity 0.5s ease, transform 1.0s ease;
+}
+.campera-inicio:hover {
+  transform: translateY(-10px);
+}
+
+.campera-inicio .dorso {
+  opacity: 0;
+}
+.campera-inicio:hover .dorso {
+  opacity: 1;
+}
+.campera-inicio:hover .frente {
+  opacity: 0;
+}
+/* ---------contenedor de camperas----------------- */
+.contenedor-camperas {
+  position: absolute;
+  top:65%;
+}
+.contenedor-camperas h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+.contenedor-camperas p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+  color: green;
+  font-size: 16px;
+
+}
+/* ----------------------*/
+/*        FOOTER         */
+/* ----------------------*/
+footer{
+  
+  background-color: black;
+  text-align: center;
+  position: static;
+  top: 0%;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+}
+.encabezado-footer {
+  text-align:center;
+  padding: 0%;
+  margin: 0%;
+}
+.titulo-derechos {
+  color: #fbfafa;
+  font-family:"Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+}
+
+.redes {
+  padding: 20px;
+
+}
+.titulo-redes {
+  color: #fbfafa;
+  font-family:"Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav-redes {
+  color: #EAC46Fff;
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.nav-redes li i {
+  font-size: 1.5rem; 
+  color: #EAC46Fff;
+  transition: transform 0.5s ease;
+}
+.nav-redes li i:hover {
+  transform: scale(1.5);
+  color: #fff; 
+}
+
+
+
+/* ----------------------*/
+/*        GRIDD         */
+/* ----------------------*/
+ 
+
+.grilla {
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 30px;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+
+.item {
+  display: flex;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  background-color: aqua;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+/* ----------------------*/
+/*        RESEÑAS         */
+/* ----------------------*/
+
+.reseñas {
+  padding: 40px 20px;
+  background-color: #fff8f0; /* tono crema */
+  text-align: center;
+  border-radius: 30px;
+  margin: 30px auto;
+  box-shadow: 0px 0px 15px rgba(112, 66, 20, 0.2);
+  border: 3px dashed #c5a880;
+}
+
+.reseñas h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #5a3c24;
+  letter-spacing: 1px;
+}
+
+.grid-reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reseña {
+  background: #fcf8f3;
+  padding: 25px;
+  border: 2px solid #a67c52;
+  border-radius: 15px;
+  box-shadow: 2px 4px 10px rgba(87, 60, 40, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reseña:hover {
+  transform: translat
+}
+
+/* --------------------------------------------------------------------- */
+                            /* HTML PRODUCTOS  */
+/* --------------------------------------------------------------------- */
+
+.parrafo-producto {
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+  height: 20px;
+}
+
+.campera{
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 10px black;
+}
+.campera img {
+  background-color: #e4e1e1;
+  border-radius: 15px;
+  padding-top: 25%;
+  padding-left: 16%;
+  padding-right: 16%;
+  margin: 0%;
+  width: 200px;   
+  max-width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 35%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  /* top y left ajustan el alto y la izquierda de la imagen, y translate lo empujamos hacia el centro*/
+  transition: opacity 0.5s ease, transform 1.0s ease;
+}
+.campera:hover {
+  transform: translateY(-10px);
+}
+.campera .dorso {
+  opacity: 0;
+}
+.campera:hover .dorso{
+  opacity: 1;
+}
+.campera:hover .frente{
+  opacity: 0;
+}
+
+/* Botones de agregar al carrito estilo vintage */
+button.comprar, .contenedor-camperas button {
+  background-color: #a67c52; /* marrón suave */
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 3px 0px #5c4033;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+/* Hover retro */
+button.comprar:hover, .contenedor-camperas button:hover {
+  background-color: #d2b48c; /* tono beige vintage */
+  color: #3b2f2f;
+  transform: translateY(-2px);
+  box-shadow: 4px 5px 0px #5c4033;
+}
+
+
+/* ----------------------*/
+/*        ADIDAS         */
+/* ----------------------*/
+
+#adidas {
+  padding: 50px;
+  margin: 50px;
+  scroll-margin-top: 250px;
+  /* Ajustá según el alto de tu header */
+}
+
+.encabezado-adidas {
+
+  display: grid;
+  justify-items: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.logo-adidas{
+
+  max-width: 150px;
+  height: auto;
+}
+
+.titulo-adidas {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-adidas {
+ 
+  display: flex;
+  flex-wrap: wrap;     
+  justify-content:center;       
+  gap: 50px;
+  align-items: center;    
+  padding: 20px;
+  margin: 50px;
+  }
+
+.img-adidas img {
+  width: 200px;   
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ----------------------*/
+/*        NIKE           */
+/* ----------------------*/
+
+#nike {
+  padding: 50px;
+  margin: 50px;
+  scroll-margin-top: 250px;
+}
+
+.encabezado-nike {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;  
+}
+
+.logo-nike {
+  max-width: 150px;
+  height: auto;   
+}
+
+.titulo-nike {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-nike {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;            
+  gap: 50px;
+  justify-items: center;    
+  padding: 20px;
+  margin: 50px;
+}
+
+.img-nike img {
+  width: 200px;   
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* ----------------------*/
+/*        PUMA           */
+/* ----------------------*/
+
+#puma {
+  padding: 50px;  
+  margin: 50px; 
+  scroll-margin-top: 250px;
+}
+
+.encabezado-puma {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;  
+}
+
+.logo-puma {
+  max-width: 150px;
+  height: auto;   
+}
+
+.titulo-puma {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-puma {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;            
+  gap: 50px;
+  justify-items: center;    
+  padding: 20px;
+  margin: 50px;
+}
+
+.img-puma img {
+  width: 200px;             
+  max-width: 200px;
+  height: 200px;
+  object-fit:cover;    
+}
+
+
+/* ----------------------*/
+/*        REEBOK         */
+/* ----------------------*/
+
+#reebok {
+  padding: 50px;
+  margin: 50px;
+  scroll-margin-top: 250px;
+  /* Ajustá según el alto de tu header */
+}
+
+.encabezado-reebok {
+  text-align: center;
+  padding: 0%;
+  margin: 0%;  
+}
+
+.logo-reebok {
+  max-width: 150px;
+  height: auto;   
+}
+
+.titulo-reebok {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.img-reebok {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;            
+  gap: 50px;
+  justify-items: center;    
+  padding: 20px;
+  margin: 50px;
+}
+
+.img-reebok img {
+  width: 200px;             
+  max-width: 200px;
+  height: 200px;
+  object-fit:cover;    
+}
+
+/* --------------------------------------------------------------------- */
+                            /* MEDIA QUERIES  */
+/* --------------------------------------------------------------------- */
+  
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 5rem;
+  }
+  .titulo {
+    font-size: 1rem;
+  }
+  .nav-lista a {
+    font-size: 1rem;
+  }
+  .logo-marca {
+    height: 4.5rem;
+    width: 90%;
+    margin: 1.5rem;
+  }
+  .logo-marca a img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .formulario-contacto h2 {
+  margin-bottom: 0.7rem;
+  }
+  .formulario-contacto form {
+  
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 250px;
+  width: 45%;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    width: 90%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    font-size: 0.5rem;
+    }
+
+  .parrafo-producto {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .titulo-redes,
+  .nav-redes li i,
+  .titulo-derechos {
+    font-size: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------- */
+                            /* UBICACION  */
+/* --------------------------------------------------------------------- */
+
+.titulo-ubicacion { 
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+  font-family: ARIAL, sans-serif;
+
+}
+.map-container{
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.iframe-ubi {
+  
+  width: 100%;
+  height: 500px;
+  border: none;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* --------------------------------------------------------------------- */
+                            /* CONTACTO  */
+/* --------------------------------------------------------------------- */
+
+.formulario-contacto {
+  font-family: 'Courgette', cursive;
+  background-color: #fff8f0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 3px dashed #c5a880;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(153, 119, 90, 0.3);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.formulario-contacto h2 {
+  margin-bottom: 25px;
+  color: #7a5c3e;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.formulario-contacto form {
+  background-color: #fff3e0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(87, 60, 40, 0.2);
+  width: 100%;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #b89b79;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Courgette', cursive;
+  background-color: #fefcf9;
+  color: #3b2f2f;
+  box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7);
+  transition: border-color 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  border-color: #7a5c3e;
+  outline: none;
+}
+
+.formulario-contacto input[type="submit"],
+.formulario-contacto input[type="reset"] {
+  width: 48%;
+  background-color: #7a5c3e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border-radius: 12px;
+  box-shadow: 2px 3px 0px #5c4033;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto input[type="reset"] {
+  background-color: #a67c52;
+  box-shadow: 2px 3px 0px #5c4033;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+  background-color: #c5a880;
+  color: #2e1c0e;
+  box-shadow: 4px 5px 0px #5c4033;
+}
+
+.formulario-contacto input[type="reset"]:hover {
+  background-color: #c5a880;
+  color: #2e1c0e;
+  box-shadow: 4px 5px 0px #5c4033;
+}
+
+.formulario-contacto .btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+/* Asegura centrado vertical y horizontal de todo el main */
+main.compra, .formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra vertical */
+  align-items: center; /* centra horizontal */
+  min-height: 80vh; /* ocupa la mayor parte de la pantalla */
+  margin: 0 auto;
+}
+
+/* Para que el formulario tenga un tope de ancho y no se estire */
+.formulario-contacto form {
+  max-width: 500px;
+  width: 100%;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+                            /*CARRITO DE COMPRAS*/
+/* --------------------------------------------------------------------- */
+
+/* Fondo oscuro del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 15, 5, 0.8);
+  font-family: 'Courgette', cursive;
+}
+
+/* Contenedor interno */
+.modal-contenido {
+  background-color: #fff8f0;
+  margin: 10% auto;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  border: 2px dashed #c5a880;
+  box-shadow: 0 0 20px rgba(90, 60, 30, 0.4);
+  color: #4a3b2c;
+}
+
+/* Cerrar modal */
+.cerrar-modal {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #7a5c3e;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cerrar-modal:hover {
+  color: #a67c52;
+}
+
+/* Botones del modal */
+.botones-carrito {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.botones-carrito button {
+  padding: 12px 20px;
+  background-color: #7a5c3e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  box-shadow: 2px 3px 0px #5c4033;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botones-carrito button:hover {
+  background-color: #c5a880;
+  color: #2e1c0e;
+  box-shadow: 3px 4px 0px #5c4033;
+}
+
+/* Ícono de carrito con contador */
+.carrito-icono {
+  position: relative;
+}
+
+.contador-carrito {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #a22222;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+
+
+/* --------------------------------------------------------------------- */
+                            /*PAGINA COMPRA */
+/* --------------------------------------------------------------------- */
+
+/* Fondo general */
+body {
+  background-color: #f8f1e5;
+  color: #3b2f2f;
+  font-family: 'Courgette', cursive;
+}
+
+/* Main compra */
+main.compra {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fffaf0;
+  border: 3px dashed #c5a880;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(153, 119, 90, 0.3);
+}
+
+/* Título principal */
+main.compra h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #7a5c3e;
+  margin-bottom: 25px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+
+/* Detalle del carrito */
+#detalle {
+  background-color: #f4ede3;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #a67c52;
+  margin-bottom: 30px;
+}
+
+#detalle p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+#detalle p:last-child {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #5a3c24;
+  border-top: 1px solid #a67c52;
+  padding-top: 10px;
+}
+
+/* Formulario estilo vintage */
+form#formulario {
+  background-color: #fff3e0;
+  border: 2px solid #d2b48c;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(87, 60, 40, 0.2);
+  font-family: 'Courgette', cursive;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+form#formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4b3621;
+  font-size: 1.1rem;
+}
+
+form#formulario input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #b89b79;
+  background-color: #fefcf9;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form#formulario button {
+  margin-top: 25px;
+  background-color: #7a5c3e;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+form#formulario button:hover {
+  background-color: #c5a880;
+  color: #2e1c0e;
+}
