@@ -190,7 +190,6 @@ footer{
 }
 
 .nav-redes {
-  color: #EAC46Fff;
   list-style: none;
   display: flex;
   gap: 80px;
@@ -201,7 +200,7 @@ footer{
 
 .nav-redes li i {
   font-size: 1.5rem; 
-  color: #EAC46Fff;
+  color: rgb(226, 141, 84);
   transition: transform 0.5s ease;
 }
 .nav-redes li i:hover {
