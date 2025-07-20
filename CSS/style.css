@@ -404,29 +404,24 @@ footer{
   opacity: 0;
 }
 
-/* Botones de agregar al carrito estilo vintage */
-button.comprar, .contenedor-camperas button {
-  background-color: #a67c52; /* marrón suave */
-  color: #fff;
+.comprar {
+  display: block;      /* que tome toda una línea */
+  margin: 10px auto 0 auto;  /* arriba 10px, horizontal auto para centrar, abajo 0 */
+  background-color: #ff6600;
+  color: white;
   border: none;
-  padding: 12px 18px;
-  font-size: 1.1rem;
-  font-family: 'Bebas Neue', cursive;
-  text-transform: uppercase;
-  border-radius: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  box-shadow: 2px 3px 0px #5c4033;
-  transition: all 0.3s ease;
-  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover retro */
-button.comprar:hover, .contenedor-camperas button:hover {
-  background-color: #d2b48c; /* tono beige vintage */
-  color: #3b2f2f;
-  transform: translateY(-2px);
-  box-shadow: 4px 5px 0px #5c4033;
 
+.comprar:hover {
+  background-color: #e65c00;
+  transform: scale(1.05); /* pequeño zoom al pasar el mouse */
 }
 
 
