@@ -70,4 +70,4 @@ document.getElementById('btn-siguiente').addEventListener('click', () => {
 });
 
 // Iniciar
-cargarReseñas(5); // Cambiá el número si querés más reseñas
+cargarReseñas(7); // Cambiá el número si querés más reseñas
