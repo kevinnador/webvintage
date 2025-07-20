@@ -209,34 +209,6 @@ footer{
   color: #fff; 
 }
 
-
-
-/* ----------------------*/
-/*        GRIDD         */
-/* ----------------------*/
- 
-
-.grilla {
-  display: grid;
-  border: 1px solid black;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-  padding: 30px;
-  margin: 30px;
-  justify-content: space-around;
-}
-
-
-.item {
-  display: flex;
-  border: 1px solid black;
-  flex-wrap: wrap;
-  background-color: aqua;
-  justify-content: center;
-  padding: 20px;
-
-}
-
 /* ----------------------*/
 /*        RESEÑAS         */
 /* ----------------------*/
