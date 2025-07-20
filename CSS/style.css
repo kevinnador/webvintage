@@ -743,6 +743,21 @@ footer{
     margin-top: 10px;
   }
 }
+@media (max-width: 480px) {
+  .tituloreseñas {
+    font-size: 18px;
+  }
+
+  .reseña {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .carrusel-reseñas button {
+    font-size: 20px;
+  }
+}
+
 /* --------------------------------------------------------------------- */
                             /* UBICACION  */
 /* --------------------------------------------------------------------- */
