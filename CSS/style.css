@@ -102,25 +102,18 @@ header {
   margin: 50px;
 }
 .campera-inicio {
-  
   display: flex;
   justify-content: center;
   border-radius: 15px;
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 325px;
+  height: 525px;
   box-shadow: 0px 0px 10px black;
 }
 .campera-inicio img {
-  background-color: #e4e1e1;
-  border-radius: 15px;
-  padding-top: 25%;
-  padding-left: 16%;
-  padding-right: 16%;
-  margin: 0%;
-  width: 200px;   
-  max-width: 200px;
-  height: 200px;
+  width: 250px;
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   top: 35%;
   left:50%;
@@ -144,9 +137,10 @@ header {
 /* ---------contenedor de camperas----------------- */
 .contenedor-camperas {
   position: absolute;
-  top:65%;
+  top:70%;
+
 }
-.contenedor-camperas h3 {
+.contenedor-camperas h2 {
   display: flex;
   justify-content: center;
   font-family: "Bebas Neue", sans-serif;
@@ -383,20 +377,13 @@ footer{
   justify-content: center;
   border-radius: 15px;
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 500px;
   box-shadow: 0px 0px 10px black;
 }
 .campera img {
-  background-color: #e4e1e1;
-  border-radius: 15px;
-  padding-top: 25%;
-  padding-left: 16%;
-  padding-right: 16%;
-  margin: 0%;
-  width: 200px;   
-  max-width: 200px;
-  height: 200px;
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   top: 35%;
   left:50%;
@@ -439,6 +426,7 @@ button.comprar:hover, .contenedor-camperas button:hover {
   color: #3b2f2f;
   transform: translateY(-2px);
   box-shadow: 4px 5px 0px #5c4033;
+
 }
 
 
@@ -476,7 +464,6 @@ button.comprar:hover, .contenedor-camperas button:hover {
 }
 
 .img-adidas {
- 
   display: flex;
   flex-wrap: wrap;     
   justify-content:center;       
@@ -487,9 +474,9 @@ button.comprar:hover, .contenedor-camperas button:hover {
   }
 
 .img-adidas img {
-  width: 200px;   
-  max-width: 200px;
-  height: 200px;
+  width: 250px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 
@@ -533,9 +520,9 @@ button.comprar:hover, .contenedor-camperas button:hover {
 }
 
 .img-nike img {
-  width: 200px;   
-  max-width: 200px;
-  height: 200px;
+  width: 250px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 
@@ -580,10 +567,10 @@ button.comprar:hover, .contenedor-camperas button:hover {
 }
 
 .img-puma img {
-  width: 200px;             
-  max-width: 200px;
-  height: 200px;
-  object-fit:cover;    
+  width: 250px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 
@@ -628,10 +615,10 @@ button.comprar:hover, .contenedor-camperas button:hover {
 }
 
 .img-reebok img {
-  width: 200px;             
-  max-width: 200px;
-  height: 200px;
-  object-fit:cover;    
+  width: 250px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 /* --------------------------------------------------------------------- */
