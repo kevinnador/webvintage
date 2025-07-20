@@ -61,7 +61,7 @@
                         <img src="./img/sublogopuma.png" alt="puma">
                     </a>
                 </div>
-                <p class="parrafo-producto">"Ropa con historia. Estilo con sentido."
+                <p class="parrafo-producto">Ropa con historia. Estilo con sentido
                     
                 </p>
             
@@ -96,21 +96,32 @@
                     </div>
                 </div>
             </section>
-            <section class="reseñas">
-                <h3>Reseñas de nuestros clientes</h3>
-                <div class="reseña">
-                    <p class="comentario">"Me encantó el diseño, súper cómodo y abrigado. ¡Recomendado!"</p>
-                    <p class="autor"> Mario aznar</p>
+            <section id="reseñas">
+            <h2>Reseñas de clientes</h2>
+            <div class="carrusel-reseñas">
+                <button id="btn-anterior">⟵</button>
+
+                <div class="reseña" id="reseña-activa">
+                <!-- Se llena con JS -->
                 </div>
-                <div class="reseña">
-                    <p class="comentario">"El envío fue rápido y el producto vino en perfecto estado."</p>
-                    <p class="autor"> Pedro Gómez</p>
-                </div>
-                <div class="reseña">
-                    <p class="comentario">"Las camperas son de excelente calidad. Volveré a comprar sin duda."</p>
-                    <p class="autor"> Juan Pérez</p>
-                </div>
+
+                <button id="btn-siguiente">⟶</button>
+            </div>
             </section>
+
+            <section id="sobre-nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>
+                Somos un equipo apasionado por brindar experiencias únicas a cada cliente.
+                Nos dedicamos a ofrecer productos de calidad, atención personalizada y
+                un enfoque auténtico que refleja nuestro compromiso con lo que hacemos.
+            </p>
+            <p>
+                Nuestro objetivo es marcar la diferencia en cada detalle, desde la
+                presentación hasta el servicio. ¡Gracias por acompañarnos en este camino!
+            </p>
+            </section>
+
     </main> 
     <footer>
         <div class="redes">
@@ -136,6 +147,8 @@
     </footer>
     <script src="./javascript/script.js"></script>
     <!-- conectamos con el javascript -->
+     <script src="./javascript/reseñas.js"></script>
+
 </body>
 </html>
 
