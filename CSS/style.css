@@ -593,7 +593,7 @@ footer{
 /* --------------------------------------------------------------------- */
                             /* MEDIA QUERIES  */
 /* --------------------------------------------------------------------- */
-  
+
 
 @media (max-width: 768px) {
   .logo {
@@ -618,7 +618,7 @@ footer{
   .logo-marca {
     height: auto;
     width: 100%;
-    margin: 1rem 0;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -648,7 +648,7 @@ footer{
   .formulario-contacto textarea {
     width: 100%;
     padding: 0.6rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem;
     font-size: 0.875rem;
   }
 
@@ -658,12 +658,12 @@ footer{
     text-align: center;
   }
 
-  /* ⚙️ Footer responsive */
+  /* Footer responsive */
   footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .titulo-redes,
@@ -677,9 +677,31 @@ footer{
     justify-content: center;
     gap: 0.8rem;
   }
+  .contenedor-camperas {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.img-adidas,.img-nike,.img-puma,.img-reebok {
+  display: flex;
+  justify-content: center; /* o space-between / space-around / space-evenly */
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre camperas */
+}
+.campera {
+  max-width: 300px;
+  text-align: center;
+}
+#adidas,#nike,#puma,#reebok {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+}
 
+  
 /* --------------------------------------------------------------------- */
                             /* UBICACION  */
 /* --------------------------------------------------------------------- */
