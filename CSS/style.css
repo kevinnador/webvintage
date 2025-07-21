@@ -606,6 +606,7 @@ footer{
   }
 
   .nav-lista {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
@@ -617,10 +618,9 @@ footer{
 
   .logo-marca {
     height: auto;
-    width: 100%;
     margin: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     flex-wrap: wrap;
     gap: 1rem;
   }
@@ -698,7 +698,10 @@ footer{
   flex-direction: column;
   align-items: center;
 }
-
+.carrusel-reseñas{
+  display: flex;
+  flex-wrap: wrap;
+}
 }
 
   
