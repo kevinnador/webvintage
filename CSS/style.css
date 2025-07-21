@@ -599,82 +599,86 @@ footer{
   .logo {
     max-width: 5rem;
   }
+
   .titulo {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
+
+  .nav-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   .nav-lista a {
     font-size: 1rem;
   }
+
   .logo-marca {
-    height: 4.5rem;
-    width: 90%;
-    margin: 1.5rem;
+    height: auto;
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
+
   .logo-marca a img {
     width: 2.5rem;
     height: 2.5rem;
   }
 
   .formulario-contacto h2 {
-  margin-bottom: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    text-align: center;
   }
+
   .formulario-contacto form {
-  
-  padding: 1rem;
-  border-radius: 0.5rem;
-  max-width: 250px;
-  width: 45%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   .formulario-contacto input,
   .formulario-contacto textarea {
-    width: 90%;
-    padding: 0.2rem;
-    margin: 0.2rem;
-    font-size: 0.5rem;
-    }
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+  }
 
   .parrafo-producto {
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
+    text-align: center;
   }
+
+  /* ⚙️ Footer responsive */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
   .titulo-redes,
   .nav-redes li i,
   .titulo-derechos {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 768px) {
-  .parrafo-producto {
-    font-size: 1.4rem;
-    padding: 10px;
-    height: auto;
-  }
-
-  .campera {
-    width: 90%;
-    height: auto;
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-
-  .campera img {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 100%;
-    height: auto;
-  }
-
-  .comprar {
-    font-size: 14px;
-    padding: 8px 14px;
-    width: 80%;
-    margin-top: 12px;
+  .nav-redes {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
   }
 }
+
 
 /* --------------------------------------------------------------------- */
                             /* UBICACION  */
