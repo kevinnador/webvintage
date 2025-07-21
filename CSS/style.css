@@ -645,6 +645,37 @@ footer{
   }
 }
 
+@media (max-width: 768px) {
+  .parrafo-producto {
+    font-size: 1.4rem;
+    padding: 10px;
+    height: auto;
+  }
+
+  .campera {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .campera img {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .comprar {
+    font-size: 14px;
+    padding: 8px 14px;
+    width: 80%;
+    margin-top: 12px;
+  }
+}
+
 /* --------------------------------------------------------------------- */
                             /* UBICACION  */
 /* --------------------------------------------------------------------- */
