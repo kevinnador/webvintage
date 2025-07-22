@@ -702,7 +702,26 @@ footer{
   display: flex;
   flex-wrap: wrap;
 }
+  .formulario-contacto {
+    margin: 30px 16px;
+    padding: 20px;
+  }
+
+  .formulario-contacto h2 {
+    font-size: 28px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-group input[type="submit"],
+  .btn-group input[type="reset"] {
+    width: 100%;
+  }
 }
+
 
   
 /* --------------------------------------------------------------------- */
@@ -737,111 +756,71 @@ footer{
                             /* CONTACTO  */
 /* --------------------------------------------------------------------- */
 
+/* Estilos generales para el formulario */
 .formulario-contacto {
-  font-family: 'Courgette', cursive;
-  background-color: #fff8f0;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  border: 3px dashed #c5a880;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(153, 119, 90, 0.3);
   max-width: 600px;
-  margin: 40px auto;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fefaf3;
+  border: 2px dashed #a67c52;
+  border-radius: 12px;
+  font-family: 'Courgette', cursive;
+  color: #3e2f1c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .formulario-contacto h2 {
-  margin-bottom: 25px;
-  color: #7a5c3e;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
-.formulario-contacto form {
-  background-color: #fff3e0;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(87, 60, 40, 0.2);
-  width: 100%;
-}
-
-.formulario-contacto input,
+/* Inputs y textarea */
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
 .formulario-contacto textarea {
   width: 100%;
   padding: 12px;
-  margin: 12px 0;
-  border: 1px solid #b89b79;
-  border-radius: 10px;
-  font-size: 1rem;
+  margin-bottom: 16px;
+  border: 1px dashed #c3a783;
+  border-radius: 6px;
+  background-color: #fffaf2;
   font-family: 'Courgette', cursive;
-  background-color: #fefcf9;
-  color: #3b2f2f;
-  box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7);
-  transition: border-color 0.3s ease;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-.formulario-contacto input:focus,
-.formulario-contacto textarea:focus {
-  border-color: #7a5c3e;
-  outline: none;
+.formulario-contacto textarea {
+  resize: vertical;
 }
 
-.formulario-contacto input[type="submit"],
-.formulario-contacto input[type="reset"] {
-  width: 48%;
-  background-color: #7a5c3e;
-  color: white;
+/* Botones */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-group input[type="submit"],
+.btn-group input[type="reset"] {
+  background-color: #d4a373;
+  color: #fff;
   border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  border-radius: 12px;
-  box-shadow: 2px 3px 0px #5c4033;
   transition: background-color 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
 }
 
-.formulario-contacto input[type="reset"] {
-  background-color: #a67c52;
-  box-shadow: 2px 3px 0px #5c4033;
+.btn-group input[type="submit"]:hover,
+.btn-group input[type="reset"]:hover {
+  background-color: #b07d56;
 }
-
-.formulario-contacto input[type="submit"]:hover {
-  background-color: #c5a880;
-  color: #2e1c0e;
-  box-shadow: 4px 5px 0px #5c4033;
-}
-
-.formulario-contacto input[type="reset"]:hover {
-  background-color: #c5a880;
-  color: #2e1c0e;
-  box-shadow: 4px 5px 0px #5c4033;
-}
-
-.formulario-contacto .btn-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 4%;
-}
-/* Asegura centrado vertical y horizontal de todo el main */
-main.compra, .formulario-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centra vertical */
-  align-items: center; /* centra horizontal */
-  min-height: 80vh; /* ocupa la mayor parte de la pantalla */
-  margin: 0 auto;
-}
-
-/* Para que el formulario tenga un tope de ancho y no se estire */
-.formulario-contacto form {
-  max-width: 500px;
-  width: 100%;
-}
-
 
 
 /* --------------------------------------------------------------------- */
